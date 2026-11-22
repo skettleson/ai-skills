@@ -20,6 +20,8 @@ Schedule a daily prompt such as: "Use the layercast-outfit skill to post today's
 
 [Open-Meteo](https://open-meteo.com/), CC BY 4.0. No API key needed. The free API is for non-commercial use only.
 
+If Open-Meteo can't be reached (some sandboxed environments block it), the skill falls back to a WeatherBug or National Weather Service forecast page for your city or ZIP, then to search results. It checks that the page is for your place and today's date before using it. If a page has only the day's high, low, rain chance and wind, the skill estimates the hours you'll be out from those, and says so.
+
 ## License
 
 MIT, see [LICENSE](../LICENSE).
